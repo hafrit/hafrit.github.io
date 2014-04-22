@@ -146,6 +146,17 @@
     transition: all 0.5s linear;
 }
 
+#contact a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contact .touch{
+    float: left;
+    width: 33%;
+    margin-bottom: 23px;
+    text-align: center;
+}
 
 @media (min-width: 100px) and (max-width: 812px){
     body {
