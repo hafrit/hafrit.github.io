@@ -44,9 +44,10 @@ $( document ).ready(function() {
                 //_bh.animate({ scrollTop: pos }, 'slow', 'swing');
                 $(".jumbotron .container").hide(1000).fadeOut();
                 $($(this).attr('href')).show(500).fadeIn();
+                $("#navbarCollapse").collapse("hide");
                 
-                e.preventDefault();
-                $("body, html").animate({scrollTop: $($(this).attr('href')).offset().top}, 600);
+                /*e.preventDefault();
+                $("body, html").animate({scrollTop: $($(this).attr('href')).offset().top}, 600);*/
             }
     });
     
