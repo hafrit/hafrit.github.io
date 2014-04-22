@@ -44,7 +44,12 @@ $( document ).ready(function() {
                 //_bh.animate({ scrollTop: pos }, 'slow', 'swing');
                 $(".jumbotron .container").hide(1000).fadeOut();
                 $($(this).attr('href')).show(500).fadeIn();
-                $("#navbarCollapse").collapse("hide");
+                
+                var isMobile = window.matchMedia("only screen and (max-width: 812px)");
+
+                if (isMobile.matches) {
+                    $("#navbarCollapse").collapse("hide");
+                }
                 
                 /*e.preventDefault();
                 $("body, html").animate({scrollTop: $($(this).attr('href')).offset().top}, 600);*/
