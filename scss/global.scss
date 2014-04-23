@@ -10,6 +10,18 @@
     font-family: cursive;
 }
 
+.common{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+.imgstyle{
+    float: left;
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+}
+
 body {
     @extend .font-familly;
     padding-top: 50px;
@@ -89,11 +101,6 @@ blockquote {
     }
 }//. jumbotron
 
-.common{
-    opacity: 1;
-    transition: all 0.5s linear;
-}
-
 .nav{
     li a{
         opacity: 0.5;
@@ -151,10 +158,7 @@ blockquote {
 }// .container
 
 #portfolio .touch{
-    float: left;
-    width: 33%;
-    padding: 5px;
-    text-align: center;
+    @extend .imgstyle;
 }
 
 #footer{    
@@ -197,10 +201,7 @@ blockquote {
     }
 
     .touch{
-        float: left;
-        width: 33%;
-        padding: 5px;
-        text-align: center;
+        @extend .imgstyle;
     }
 }
 

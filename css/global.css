@@ -6,6 +6,16 @@
 .font-familly, body, h1 {
   font-family: cursive; }
 
+.common, .nav li a:hover, #footer ul.copyright li a:hover {
+  opacity: 1;
+  transition: all 0.5s linear; }
+
+.imgstyle, #portfolio .touch, #contact .touch {
+  float: left;
+  width: 33%;
+  padding: 5px;
+  text-align: center; }
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -73,10 +83,6 @@ blockquote {
   .jumbotron h1 {
     font-size: 2.0em; }
 
-.common, .nav li a:hover, #footer ul.copyright li a:hover {
-  opacity: 1;
-  transition: all 0.5s linear; }
-
 .nav li a {
   opacity: 0.5; }
 .nav li a:hover {
@@ -112,12 +118,6 @@ blockquote {
 .container .line a {
   text-decoration: none; }
 
-#portfolio .touch {
-  float: left;
-  width: 33%;
-  padding: 5px;
-  text-align: center; }
-
 #footer {
   width: 100%;
   margin: 10px 0; }
@@ -141,11 +141,6 @@ blockquote {
 #contact a:hover {
   text-decoration: none;
   cursor: pointer; }
-#contact .touch {
-  float: left;
-  width: 33%;
-  padding: 5px;
-  text-align: center; }
 
 /* 
     Desktop Style
@@ -193,7 +188,7 @@ blockquote {
       border-left: solid 0.6em transparent;
       border-right: solid 0.6em transparent; }
 
-  #contact .touch {
+  .touch {
     margin-bottom: 1.5%; } }
 /* 
     Mobile and Tablet Style
@@ -253,5 +248,5 @@ blockquote {
     max-width: none;
     text-align: inherit; }
 
-  #contact .touch {
+  .touch {
     margin-bottom: 0; } }
