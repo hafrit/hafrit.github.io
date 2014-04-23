@@ -4,11 +4,6 @@
    Author's custom styles
    ========================================================================== */
 
-@font-face{
-    font-family: sketchy;
-    src: url(../fonts/sketchy.ttf);
-}
-
  body {
     font-family: cursive;
     padding-top: 50px;
@@ -25,7 +20,7 @@
 }
 
 h1{
-    font-family: sketchy;
+    font-family: cursive;
     font-weight: bold;
 }
 
@@ -153,6 +148,7 @@ blockquote {
 }
 
 #footer ul.copyright li{
+    font-family: sans-serif;
     display: inline;
     color: #BBB;
 }
