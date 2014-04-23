@@ -60,12 +60,17 @@ blockquote {
     display: none;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: inherit;
+}
+
+.navbar-default .navbar-toggle:hover{
     background-color: #ddd;
 }
 
 .navbar-default .navbar-toggle:focus {
-    background-color: #3e6d94;
+    background-color: transparent;
 }
 
 .jumbotron{
@@ -74,113 +79,118 @@ blockquote {
     margin: 0 auto;
     transition: all 1s linear;
     padding: 30px;
-}
+    
+    h1{
+        font-size: 2.0em;
+    }
+}//. jumbotron
 
-.jumbotron h1{
-    font-size: 2.0em;
-}
-
-.nav li a{
-    opacity: 0.5;
-}
-
-.nav li a:hover{
+.common{
     opacity: 1;
-    color: #FFF;   
     transition: all 0.5s linear;
 }
 
-.nav li a.active{
-    opacity: 1;
-    color: #FFF;
-}
+.nav{
+    li a{
+        opacity: 0.5;
+    }
 
-.nav li a span{
-    color: #dfdfdf;
-}
+    li a:hover{
+        @extend .common;
+        color: #FFF;
+    }
 
-.nav li a:hover span,
-.nav li a.active span{
-    color: #FFF;
-}
+    li a.active{
+        opacity: 1;
+        color: #FFF;
+    }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: inherit;
-}
+    li a span{
+        color: #dfdfdf;
+    }
 
-.container header{
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
+    li a:hover span,
+    li a.active span{
+        color: #FFF;
+    }
+}// .nav
 
-.container .portrait{
-    display: block;
-    top: 0;
-    text-decoration: none;
-    float: right;
-}
+.container{
+    header{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-.container .line{
-    left: 0;
-    top: 52.5%;
-    font-size: 1.0em;
-    letter-spacing: -0.015em;
-    margin-top: 0;
-    display: block;
-    margin: 0.5em 0 0 0;
-}
+    .portrait{
+        display: block;
+        top: 0;
+        text-decoration: none;
+        float: right;
+    }
 
-.container .line a{
-    text-decoration: none;
-}
+    .line{
+        left: 0;
+        top: 52.5%;
+        font-size: 1.0em;
+        letter-spacing: -0.015em;
+        margin-top: 0;
+        display: block;
+        margin: 0.5em 0 0 0;
+    }
 
-#footer{
+    .line a{
+        text-decoration: none;
+    }
+}// .container
+
+#footer{    
     width: 100%;
     margin: 10px 0;
+
+    ul.copyright{
+        margin: 0 auto;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    ul.copyright li{
+        font-family: sans-serif;
+        display: inline;
+        color: #BBB;
+    }
+
+    ul.copyright li:before {
+        content: '\2022';
+        opacity: 0.5;
+        padding: 0 0.75em 0 0.75em;
+    }
+
+    ul.copyright li a{
+        color: #FFF;
+        opacity: 0.5;
+        text-decoration: underline;
+    }
+
+    ul.copyright li a:hover{
+        @extend .common;
+    }
 }
 
-#footer ul.copyright{
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center;
-}
+#contact {
+    a:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-#footer ul.copyright li{
-    font-family: sans-serif;
-    display: inline;
-    color: #BBB;
-}
-
-#footer ul.copyright li:before {
-    content: '\2022';
-    opacity: 0.5;
-    padding: 0 0.75em 0 0.75em;
-}
-
-#footer ul.copyright li a{
-    color: #FFF;
-    opacity: 0.5;
-    text-decoration: underline;
-}
-
-#footer ul.copyright li a:hover{
-    opacity: 1;       
-    transition: all 0.5s linear;
-}
-
-#contact a:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#contact .touch{
-    float: left;
-    width: 33%;
-    text-align: center;
+    .touch{
+        float: left;
+        width: 33%;
+        padding: 5px;
+        text-align: center;
+    }
 }
 
 // Desktop style

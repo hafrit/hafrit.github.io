@@ -7,63 +7,81 @@
         padding-top: 0;
         padding-bottom: 20px;
     }
+    
     .container {
         max-width: 100%;
     }
+    
     .wrapper{
         max-width: 100%;
     }
+    
     .jumbotron{
         max-width: 96%;
     }
+    
     .navbar-inverse .navbar-nav>.active>a {
         background-color: inherit;
     }
+    
     .navbar-nav{
         margin: 0;
     }
+    
     .navbar-collapse{
         padding-left: 0;
         padding-right: 0;
     }
-
-    .nav a span {
-        text-align: center;
-        left: 37%;
-        padding: 3px 5px;
-    }    
     
-    .nav li{
-        width: 100%;
-        height: 25%;
-        border-bottom: 1px solid #E6E6E6;
-        border-top: 1px solid #507A9D;
-        text-align: center;
-    }
-    
-    .nav li:first-child{
-        border-bottom: 1px solid #E6E6E6;
-        border-top: none;
-    }
-    
-    .nav li:last-child{
-        border-top: 1px solid #507A9D;
-        border-bottom: none;
-    }
-    
-    .nav{
+    .nav{       
         width: 100%;
         height: 200px;
-    }
 
-    .nav li a{
-        background-image: none !important;
-        background-repeat: no-repeat;
-        background-position: left center;
-    }
+        a span {
+            text-align: center;
+            left: 37%;
+            padding: 3px 5px;
+        }    
+
+        li{
+            width: 100%;
+            height: 25%;
+            border-bottom: 1px solid #E6E6E6;
+            border-top: 1px solid #507A9D;
+            text-align: center;
+        }
+
+        li:first-child{
+            border-bottom: 1px solid #E6E6E6;
+            border-top: none;
+        }
+
+        li:last-child{
+            border-top: 1px solid #507A9D;
+            border-bottom: none;
+        }
+        
+        li a{
+            background-image: none !important;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+    }// .nav
+    
+    #footer {
+        ul.copyright li{
+            display: block;
+        }
+    
+        ul.copyright {
+            margin: 0 auto;
+            max-width: none;
+            text-align: inherit;
+        }
+    }// #footer      
     
     #contact .touch{
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
     
 }
