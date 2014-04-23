@@ -138,7 +138,7 @@ blockquote {
     opacity: 0.5;
     text-decoration: underline; }
 
-#contact a:hover {
+#contact a:hover, #portfolio a:hover {
   text-decoration: none;
   cursor: pointer; }
 
