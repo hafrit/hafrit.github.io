@@ -3,8 +3,10 @@
     Created on : 23 avr. 2014, 12:33:53
     Author     : Hamdi Afrit
 */
+.font-familly, body, h1 {
+  font-family: cursive; }
+
 body {
-  font-family: cursive;
   padding-top: 50px;
   padding-bottom: 20px;
   background-image: url(../img/bg_body.jpg);
@@ -22,7 +24,6 @@ body {
   /* Gecko 2.0 (Firefox 4.0) > CSS3 */ }
 
 h1 {
-  font-family: cursive;
   font-weight: bold; }
 
 img {

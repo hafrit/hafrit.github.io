@@ -6,8 +6,12 @@
     Author     : Hamdi Afrit
 */
 
-body {
+.font-familly{
     font-family: cursive;
+}
+
+body {
+    @extend .font-familly;
     padding-top: 50px;
     padding-bottom: 20px;    
     background-image: url(../img/bg_body.jpg); 
@@ -22,7 +26,7 @@ body {
 }
 
 h1{
-    font-family: cursive;
+    @extend .font-familly;
     font-weight: bold;
 }
 
