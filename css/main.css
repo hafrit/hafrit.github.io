@@ -5,8 +5,8 @@
    ========================================================================== */
 
 @font-face{
-    font-family: Rez;
-    src: url(../fonts/REZ.ttf);
+    font-family: sketchy;
+    src: url(../fonts/sketchy.ttf);
 }
 
  body {
@@ -25,7 +25,7 @@
 }
 
 h1{
-    font-family: Rez;
+    font-family: sketchy;
 }
 
 img{
