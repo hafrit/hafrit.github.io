@@ -4,8 +4,13 @@
    Author's custom styles
    ========================================================================== */
 
+@font-face{
+    font-family: Rez;
+    src: url(../fonts/RES.ttf);
+}
+
  body {
-    font-family: Cursive;
+    font-family: Rez;
     padding-top: 50px;
     padding-bottom: 20px;    
     background-image: url(../img/bg_body.jpg); 
@@ -20,7 +25,7 @@
 }
 
 h1{
-    font-family: Cursive;
+    font-family: Rez;
 }
 
 img{
@@ -67,7 +72,7 @@ img{
 }
 
 .jumbotron h1{
-    font-size: 2.4em;
+    font-size: 2.0em;
 }
 
 .nav li a{
