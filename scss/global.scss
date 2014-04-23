@@ -157,7 +157,7 @@ blockquote {
     }
 }// .container
 
-#portfolio .touch{
+.touch{
     @extend .imgstyle;
 }
 
@@ -198,10 +198,6 @@ blockquote {
     a:hover{
         text-decoration: none;
         cursor: pointer;
-    }
-
-    .touch{
-        @extend .imgstyle;
     }
 }
 
