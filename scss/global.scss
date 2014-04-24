@@ -1,5 +1,3 @@
-// Import scss Files
-
 /* 
     Common devices style
     Created on : 23 avr. 2014, 12:33:53
@@ -12,7 +10,7 @@
 
 .common{
     opacity: 1;
-    transition: all 0.5s linear;
+    @include transition(all 0.5s linear);
 }
 
 .imgstyle{
@@ -99,7 +97,7 @@ blockquote {
     background-color: #FFF;
     box-shadow: 0px 2px 14px;
     margin: 0 auto;
-    transition: all 1s linear;
+    @include transition(all 1s linear);
     padding: 30px;
     
     h1{
@@ -172,11 +170,7 @@ blockquote {
 
 #portfolio .touch:hover {
     .caption{
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;        
+        @include transition(all 1s ease);        
         opacity: 1;
     }
 }
@@ -238,8 +232,14 @@ blockquote {
     }
 }
 
+
+// Import scss Files
+
 // Desktop style
 @import "desktop";
 
 // Mobile style
 @import "mobile";
+
+//mixins
+@import "mixins";

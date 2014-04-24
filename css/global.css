@@ -1,283 +1,73 @@
-/* 
-    Common devices style
-    Created on : 23 avr. 2014, 12:33:53
-    Author     : Hamdi Afrit
+/*
+Syntax error: Undefined mixin 'transition'.
+        on line 13 of scss/global.scss, in `transition'
+        from line 13 of scss/global.scss
+
+8:     font-family: cursive;
+9: }
+10: 
+11: .common{
+12:     opacity: 1;
+13:     @include transition(all 0.5s linear);
+14: }
+15: 
+16: .imgstyle{
+17:     float: left;
+18:     width: 33%;
+
+Backtrace:
+scss/global.scss:13:in `transition'
+scss/global.scss:13
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:389:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/engine.rb:274:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:186:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:393:in `on_file_changed'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:248:in `block in watch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.3.5/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-.font-familly, body, h1 {
-  font-family: cursive; }
-
-.common, .nav li a:hover, #footer ul.copyright li a:hover {
-  opacity: 1;
-  transition: all 0.5s linear; }
-
-.imgstyle, .touch {
-  float: left;
-  width: 33%;
-  padding: 5px;
-  position: relative;
-  text-align: center; }
-
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background-image: url(../img/bg_body.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: 100% 100%;
-  /* Gecko 1.9.2 (Firefox 3.6) */
-  -o-background-size: 100% 100%;
-  /* Opera 9.5 */
-  -webkit-background-size: 100% 100%;
-  /* Safari 3.0 */
-  background-size: 100% 100%;
-  /* Gecko 2.0 (Firefox 4.0) > CSS3 */ }
-
-h1 {
-  font-weight: bold; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-a {
-  color: #22708e;
-  text-decoration: none; }
-
-blockquote {
-  font-size: 0.7em;
-  padding: 5px 10px;
-  margin: 0 0 2em 2em;
-  border-left: 5px solid #eee; }
-
-.navbar {
-  background: none center center #22708E;
-  box-shadow: 0px 2px 14px;
-  border: none; }
-
-.navbar-inverse {
-  background-color: #3e6d94;
-  border-radius: inherit;
-  border-color: inherit;
-  padding-bottom: 0px;
-  margin-bottom: 0px; }
-
-.wrapper {
-  margin: 0 auto; }
-
-.collapse {
-  display: none; }
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: inherit; }
-
-.navbar-default .navbar-toggle:hover {
-  background-color: #ddd; }
-
-.navbar-default .navbar-toggle:focus {
-  background-color: transparent; }
-
-.jumbotron {
-  background-color: #FFF;
-  box-shadow: 0px 2px 14px;
-  margin: 0 auto;
-  transition: all 1s linear;
-  padding: 30px; }
-  .jumbotron h1 {
-    font-size: 2.0em; }
-
-.nav li a {
-  opacity: 0.5; }
-.nav li a:hover {
-  color: #FFF; }
-.nav li a.active {
-  opacity: 1;
-  color: #FFF; }
-.nav li a span {
-  color: #dfdfdf; }
-.nav li a:hover span,
-.nav li a.active span {
-  color: #FFF; }
-
-.container header {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-.container .portrait {
-  display: block;
-  top: 0;
-  text-decoration: none;
-  float: right; }
-.container .line {
-  left: 0;
-  top: 52.5%;
-  font-size: 1.0em;
-  letter-spacing: -0.015em;
-  margin-top: 0;
-  display: block;
-  margin: 0.5em 0 0 0; }
-.container .line a {
-  text-decoration: none; }
-
-#portfolio .touch a {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  z-index: 1; }
-
-#portfolio .touch:hover .caption {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 1; }
-
-.caption {
-  color: #FFF;
-  font-size: 0.7em;
-  background: rgba(44, 62, 80, 0.6);
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  padding: 5px;
-  top: 0%;
-  width: 97%;
-  z-index: 2; }
-
-#footer {
-  width: 100%;
-  margin: 10px 0; }
-  #footer ul.copyright {
-    margin: 0 auto;
-    max-width: 80%;
-    text-align: center; }
-  #footer ul.copyright li {
-    font-family: sans-serif;
-    display: inline;
-    color: #BBB; }
-  #footer ul.copyright li:before {
-    content: '\2022';
-    opacity: 0.5;
-    padding: 0 0.75em 0 0.75em; }
-  #footer ul.copyright li a {
-    color: #FFF;
-    opacity: 0.5;
-    text-decoration: underline; }
-
-#contact a:hover, #portfolio a:hover {
-  text-decoration: none;
-  cursor: pointer; }
-
-/* 
-    Desktop Style
-*/
-@media (min-width: 813px) {
-  .container {
-    max-width: 100%; }
-
-  .wrapper {
-    max-width: 60%; }
-
-  .jumbotron {
-    max-width: 96%; }
-
-  .nav {
-    width: 100%;
-    height: 56px; }
-    .nav li {
-      width: 25%;
-      height: 100%; }
-    .nav li a {
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: center center; }
-    .nav li a span {
-      display: none; }
-    .nav a:hover span {
-      display: block;
-      position: absolute;
-      top: 120%;
-      text-align: center;
-      left: 40%;
-      background-color: #919191;
-      padding: 3px 5px;
-      box-shadow: 4px 1px 4px #919191; }
-    .nav a:hover span:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -0.4em;
-      left: 50%;
-      margin-left: -0.6em;
-      border-bottom: solid 0.6em #919191;
-      border-left: solid 0.6em transparent;
-      border-right: solid 0.6em transparent; }
-
-  .touch {
-    margin-bottom: 1.5%; } }
-/* 
-    Mobile and Tablet Style
-*/
-@media (min-width: 100px) and (max-width: 812px) {
-  body {
-    padding-top: 0;
-    padding-bottom: 20px; }
-
-  .container {
-    max-width: 100%; }
-
-  .wrapper {
-    max-width: 100%; }
-
-  .jumbotron {
-    max-width: 96%; }
-
-  .navbar-inverse .navbar-nav > .active > a {
-    background-color: inherit; }
-
-  .navbar-nav {
-    margin: 0; }
-
-  .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0; }
-
-  .nav {
-    width: 100%;
-    height: 200px; }
-    .nav a span {
-      text-align: center;
-      left: 37%;
-      padding: 3px 5px; }
-    .nav li {
-      width: 100%;
-      height: 25%;
-      border-bottom: 1px solid #E6E6E6;
-      border-top: 1px solid #507A9D;
-      text-align: center; }
-    .nav li:first-child {
-      border-bottom: 1px solid #E6E6E6;
-      border-top: none; }
-    .nav li:last-child {
-      border-top: 1px solid #507A9D;
-      border-bottom: none; }
-    .nav li a {
-      background-image: none !important;
-      background-repeat: no-repeat;
-      background-position: left center; }
-
-  #footer ul.copyright li {
-    display: block; }
-  #footer ul.copyright {
-    margin: 0 auto;
-    max-width: none;
-    text-align: inherit; }
-
-  .touch {
-    margin-bottom: 0; } }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'transition'.\A         on line 13 of scss/global.scss, in `transition'\A         from line 13 of scss/global.scss\A \A 8:     font-family: cursive;\A 9: }\A 10: \A 11: .common{\A 12:     opacity: 1;\A 13:     @include transition(all 0.5s linear);\A 14: }\A 15: \A 16: .imgstyle{\A 17:     float: left;\A 18:     width: 33%;"; }

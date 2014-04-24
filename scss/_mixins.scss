@@ -1,0 +1,13 @@
+// Mixins style
+// Created on : 24 avr. 2014, 14:43:53
+// Author     : Hamdi Afrit hamdieaf@gmail.com
+
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+       -moz-transition: $value;
+        -ms-transition: $value;
+         -o-transition: $value;
+            transition: $value;
+}
+
