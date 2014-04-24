@@ -7,6 +7,11 @@
     Desktop Style
 */
 @media (min-width: 813px) {
+  body {
+    font-size: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px; }
+
   .container {
     max-width: 100%; }
 
@@ -56,6 +61,7 @@
 */
 @media (min-width: 100px) and (max-width: 812px) {
   body {
+    font-size: 100%;
     padding-top: 0;
     padding-bottom: 20px; }
 
@@ -130,9 +136,6 @@
   text-align: center; }
 
 body {
-  font-size: 12px;
-  padding-top: 50px;
-  padding-bottom: 20px;
   background-image: url(../img/bg_body.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -256,7 +259,6 @@ blockquote {
 
 .caption {
   color: #FFF;
-  font-size: 60%;
   background: rgba(44, 62, 80, 0.6);
   height: 100%;
   opacity: 0;
