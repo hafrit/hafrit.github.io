@@ -3,11 +3,11 @@
 // Author     : Hamdi Afrit hamdieaf@gmail.com
 
 
-@mixin transition($value) {
-    -webkit-transition: $value;
-       -moz-transition: $value;
-        -ms-transition: $value;
-         -o-transition: $value;
-            transition: $value;
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
 }
 
