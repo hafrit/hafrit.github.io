@@ -3,11 +3,12 @@
 // Author     : Hamdi Afrit hamdieaf@gmail.com
 
 
-@mixin transition($transition) {
-    -webkit-transition: $transition;
-       -moz-transition: $transition;
-        -ms-transition: $transition;
-         -o-transition: $transition;
-            transition: $transition;
+@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
+    -moz-transition:    $what $length $easing;
+    -o-transition:      $what $length $easing;
+    -webkit-transition: $what $length $easing;
+    -ms-transition:     $what $length $easing;
+    transition:         $what $length $easing;
+
 }
 
