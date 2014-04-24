@@ -11,6 +11,10 @@
     
     .container {
         max-width: 100%;
+        
+        .line{
+            font-size: 0.5em;
+        }
     }
     
     .wrapper{
@@ -19,7 +23,11 @@
     
     .jumbotron{
         max-width: 96%;
-    }
+    
+        h1{
+            font-size: 1.4em;
+        }
+    }//. jumbotron
     
     .navbar-inverse .navbar-nav>.active>a {
         background-color: inherit;

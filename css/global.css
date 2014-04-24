@@ -14,12 +14,16 @@
 
   .container {
     max-width: 100%; }
+    .container .line {
+      font-size: 1.0em; }
 
   .wrapper {
     max-width: 60%; }
 
   .jumbotron {
     max-width: 96%; }
+    .jumbotron h1 {
+      font-size: 2.0em; }
 
   .nav {
     width: 100%;
@@ -67,12 +71,16 @@
 
   .container {
     max-width: 100%; }
+    .container .line {
+      font-size: 0.5em; }
 
   .wrapper {
     max-width: 100%; }
 
   .jumbotron {
     max-width: 96%; }
+    .jumbotron h1 {
+      font-size: 1.4em; }
 
   .navbar-inverse .navbar-nav > .active > a {
     background-color: inherit; }
@@ -205,8 +213,6 @@ blockquote {
   -ms-transition: all 1s linear;
   transition: all 1s linear;
   padding: 30px; }
-  .jumbotron h1 {
-    font-size: 2.0em; }
 
 .nav li a {
   opacity: 0.5; }
@@ -235,7 +241,6 @@ blockquote {
 .container .line {
   left: 0;
   top: 52.5%;
-  font-size: 1.0em;
   letter-spacing: -0.015em;
   margin-top: 0;
   display: block;

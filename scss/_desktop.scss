@@ -10,6 +10,10 @@
     }
     .container {
         max-width: 100%;
+        
+        .line{
+            font-size: 1.0em;
+        }
     }
     
     .wrapper{
@@ -18,7 +22,11 @@
     
     .jumbotron{
         max-width: 96%;
-    }
+    
+        h1{
+            font-size: 2.0em;
+        }
+    }//. jumbotron
     
     .nav{
         width: 100%;
