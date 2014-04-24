@@ -41,6 +41,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+a {
+  color: #22708e;
+  text-decoration: none; }
+
 blockquote {
   font-size: 0.7em;
   padding: 5px 10px;
@@ -48,7 +52,7 @@ blockquote {
   border-left: 5px solid #eee; }
 
 .navbar {
-  background: none center center #3e6d94;
+  background: none center center #22708E;
   box-shadow: 0px 2px 14px;
   border: none; }
 
