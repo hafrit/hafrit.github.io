@@ -42,8 +42,13 @@ $( document ).ready(function() {
                 var pos = Math.max(article.parent().offset().top - _nav.height() + 15, 0);
                 e.preventDefault();
                 //_bh.animate({ scrollTop: pos }, 'slow', 'swing');
-                $(".jumbotron .container").hide(1000).fadeOut();
-                $($(this).attr('href')).show(500).fadeIn();
+                if ($($(this).attr('href')).hasClass("active")){
+                    
+                }
+                else{
+                    $(".jumbotron .container").hide(1000).fadeOut();
+                    $($(this).attr('href')).show(500).fadeIn(); 
+                }               
                 
                 var isMobile = window.matchMedia("only screen and (max-width: 812px)");
 
