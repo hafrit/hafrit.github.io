@@ -42,7 +42,7 @@ $( document ).ready(function() {
                 var pos = Math.max(article.parent().offset().top - _nav.height() + 15, 0);
                 e.preventDefault();
                 //_bh.animate({ scrollTop: pos }, 'slow', 'swing');
-                if ($($(this).attr('href')).hasClass("active")){
+                if (t.hasClass("active")){
                     
                 }
                 else{
