@@ -7,4 +7,4 @@ Allow: /
 User-agent: Slurp
 Allow: /
 User-Agent: msnbot
-Disallow: 
+Allow: /
