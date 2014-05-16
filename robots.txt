@@ -1,10 +1,4 @@
 # robotstxt.org/
 
 User-agent: *
-Disallow: /
-User-agent: Googlebot
-Allow: /
-User-agent: Slurp
-Allow: /
-User-Agent: msnbot
 Allow: /
