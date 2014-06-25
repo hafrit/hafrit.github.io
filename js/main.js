@@ -12,6 +12,7 @@ $( document ).ready(function() {
     _window = jQuery(window),
     _nav = jQuery('#nav'),
     _panels = jQuery(".panel"),
+    _captions = jQuery(".caption"),
     _wrapper = jQuery('#wrapper'),
     panels = [],
     activePanelId = null,

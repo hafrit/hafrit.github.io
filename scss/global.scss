@@ -174,14 +174,14 @@ blockquote {
 
 #portfolio .touch:hover {
     .caption{
-        @include transition(all, 1s, ease);        
+        @include transition(all, 1s, ease);
         opacity: 1;
     }
 }
 
 .caption{
     color: #FFF;
-    background: rgba(44,62,80,0.6);    
+    background: rgba(44,62,80,0.6);
     height: 100%;
     opacity: 0;
     position: absolute;
@@ -195,7 +195,7 @@ blockquote {
     @extend .imgstyle;
 }
 
-#footer{    
+#footer{
     width: 100%;
     margin: 10px 0;
 
