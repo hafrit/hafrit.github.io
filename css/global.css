@@ -58,6 +58,9 @@
       border-left: solid 0.6em transparent;
       border-right: solid 0.6em transparent; }
 
+  #portfolio section {
+    font-size: 1.0em; }
+
   .touch {
     margin-bottom: 1.5%; } }
 /* 
@@ -115,6 +118,9 @@
       background-image: none !important;
       background-repeat: no-repeat;
       background-position: left center; }
+
+  #portfolio section {
+    font-size: 0.5em; }
 
   #footer ul.copyright li {
     display: block; }
@@ -256,6 +262,10 @@ blockquote {
     display: inline-block;
     width: 33%;
     position: relative; }
+  #portfolio div.portfolio-nav a {
+    float: left;
+    width: 100%;
+    text-align: center; }
   #portfolio div.portfolio-nav a.active {
     float: left;
     border-bottom: 4px solid #22708E;
@@ -266,10 +276,11 @@ blockquote {
     transition: all 1s linear; }
 #portfolio section {
   float: left;
-  width: 96%;
+  width: 99%;
   background-color: #eee;
   padding: 10px;
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  font-family: arial; }
   #portfolio section ul {
     float: left;
     width: 100%; }

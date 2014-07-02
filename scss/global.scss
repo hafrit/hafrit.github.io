@@ -177,6 +177,12 @@ blockquote {
            position: relative;
        }
        
+       a{
+           float: left;
+           width: 100%;
+           text-align: center;
+       }
+       
        a.active{
            float: left;
            border-bottom: 4px solid #22708E;
@@ -186,10 +192,11 @@ blockquote {
     
     section{
         float: left;
-        width: 96%;
+        width: 99%;
         background-color: #eee;
         padding: 10px;
         margin: 0 0 20px 0;
+        font-family: arial;
         ul{
             float: left;
             width: 100%;
