@@ -12,6 +12,7 @@ $( document ).ready(function() {
     _window = jQuery(window),
     _nav = jQuery('#nav'),
     _panels = jQuery(".panel"),
+    _works = jQuery(".works"),
     _captions = jQuery(".caption"),
     _wrapper = jQuery('#wrapper'),
     panels = [],
@@ -32,7 +33,12 @@ $( document ).ready(function() {
                 t.hide();
     });
     
-    jQuery('a').click(function(e) {
+    _works.each(function(i) {
+        var t = jQuery(this), id = t.attr('id');
+        t.hide();
+    });
+    
+    jQuery('.nav a').click(function(e) {
             var t = jQuery(this), h = t.attr('href'), article;
             
             $("#navbarCollapse a").removeClass("active");
@@ -51,6 +57,32 @@ $( document ).ready(function() {
 
                 if (isMobile.matches) {
                     $("#navbarCollapse").collapse("hide");
+                }
+                
+                /*e.preventDefault();
+                $("body, html").animate({scrollTop: $($(this).attr('href')).offset().top}, 600);*/
+            }
+    });
+    
+    jQuery('#portfolio div a').click(function(e) {
+            var t = jQuery(this), h = t.attr('href'), section;
+            
+            $("#portfolio div a").removeClass("active");
+            t.addClass("active");
+
+            if (h.charAt(0) == '#' && h.length > 1 && (section = jQuery('section#' + h.substring(1))).length > 0)
+            {
+                var pos = Math.max(section.parent().offset().top - _nav.height() + 15, 0);
+                e.preventDefault();
+                //_bh.animate({ scrollTop: pos }, 'slow', 'swing');
+                console.log($(this));
+                $("#portfolio section").slideUp(1000);
+                $($(this).attr('href')).slideToggle(500);
+                
+                var isMobile = window.matchMedia("only screen and (max-width: 812px)");
+
+                if (isMobile.matches) {
+                    $("#portfolio").collapse("hide");
                 }
                 
                 /*e.preventDefault();

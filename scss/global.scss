@@ -165,7 +165,54 @@ blockquote {
     }
 }// .container
 
-#portfolio .touch a{
+#portfolio {
+    div.portfolio-nav{
+       float: left;
+       display: inline-block;
+       
+       div{
+           float: left;
+           display: inline-block;
+           width: 33%;
+           position: relative;
+       }
+       
+       a.active{
+           float: left;
+           border-bottom: 4px solid #22708E;
+           @include transition(all, 1s, linear);
+       }
+    }
+    
+    section{
+        float: left;
+        width: 96%;
+        background-color: #eee;
+        padding: 10px;
+        margin: 0 0 20px 0;
+        ul{
+            float: left;
+            width: 100%;
+
+            li{
+                float: left;
+                width: 100%;
+                list-style-type: disc;
+                
+                ul{
+                    float: left;
+                    li{
+                        float: left;
+                        list-style-type: circle;
+                    }
+                }
+            }
+         }
+    }
+    
+}// portfolio
+
+/*#portfolio .touch a{
     height: 100%;
     position: relative;
     width: 100%;
@@ -173,7 +220,7 @@ blockquote {
 }
 
 #portfolio .touch:hover {
-    .caption{
+    section{
         @include transition(all, 1s, ease);
         opacity: 1;
     }
@@ -189,7 +236,7 @@ blockquote {
     top: 0%;
     width: 97%;
     z-index: 2;
-}
+}*/
 
 .touch{
     @extend .imgstyle;
