@@ -161,6 +161,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  color: #666;
   -moz-background-size: 100% 100%;
   /* Gecko 1.9.2 (Firefox 3.6) */
   -o-background-size: 100% 100%;
@@ -272,7 +273,7 @@ blockquote {
     #me .resume a:hover {
       text-decoration: none; }
   #me .present-me {
-    font-family: arial; }
+    font-family: 'Source Sans Pro', sans-serif; }
 
 #portfolio {
   position: relative; }
@@ -314,7 +315,7 @@ blockquote {
     background-color: #eee;
     padding: 10px;
     margin: 0 0 20px 0;
-    font-family: arial; }
+    font-family: 'Source Sans Pro', sans-serif; }
     #portfolio section ul {
       float: left;
       width: 100%; }
