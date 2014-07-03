@@ -165,7 +165,52 @@ blockquote {
     }
 }// .container
 
+#me {
+    position: relative;
+    
+    .resume{
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        a{
+            margin-left: 5px;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    
+    .present-me{
+        font-family: arial;
+    }
+}
+
 #portfolio {
+    position: relative;
+    
+    .references{
+        position: absolute;
+        right: 0;
+        top: 0;       
+        
+        a{
+            margin-left: 5px;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            text-decoration: none;
+            
+            img{
+                transform: rotate(360deg);
+                transition: all 0.6s ease-in-out 0s;
+            }
+        }
+    }
+    
     div.portfolio-nav{
        float: left;
        display: inline-block;
