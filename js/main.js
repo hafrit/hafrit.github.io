@@ -73,7 +73,7 @@ $( document ).ready(function() {
                 var pos = Math.max(section.parent().offset().top - _nav.height() + 15, 0);
                 e.preventDefault();
                 t.removeClass('active');
-                $($(this).attr('href')).slideUp(1000);
+                $($(this).attr('href')).slideToggle(1000);
 
                 var isMobile = window.matchMedia("only screen and (max-width: 812px)");
 
