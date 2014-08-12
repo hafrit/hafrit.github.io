@@ -76,15 +76,15 @@
     padding-bottom: 20px; }
 
   .container {
-    width: 100%; }
+    max-width: 100%; }
     .container .line {
       font-size: 0.5em; }
 
   .wrapper {
-    width: 100%; }
+    max-width: 100%; }
 
   .jumbotron {
-    width: 96%; }
+    max-width: 96%; }
     .jumbotron h1 {
       font-size: 1.4em; }
 
@@ -132,7 +132,7 @@
     display: block; }
   #footer ul.copyright {
     margin: 0 auto;
-    width: none;
+    max-width: none;
     text-align: inherit; }
 
   .touch {
@@ -168,8 +168,7 @@ body {
   -webkit-background-size: 100% 100%;
   /* Safari 3.0 */
   background-size: 100% 100%;
-  /* Gecko 2.0 (Firefox 4.0) > CSS3 */
-  width: 100%; }
+  /* Gecko 2.0 (Firefox 4.0) > CSS3 */ }
 
 h1 {
   font-weight: bold; }
