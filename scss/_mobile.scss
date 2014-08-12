@@ -10,7 +10,7 @@
     }
     
     .container {
-        width: 100%;
+        max-width: 100%;
         
         .line{
             font-size: 0.5em;
@@ -18,11 +18,11 @@
     }
     
     .wrapper{
-        width: 100%;
+        max-width: 100%;
     }
     
     .jumbotron{
-        width: 96%;
+        max-width: 96%;
     
         h1{
             font-size: 1.4em;
@@ -92,7 +92,7 @@
     
         ul.copyright {
             margin: 0 auto;
-            width: none;
+            max-width: none;
             text-align: inherit;
         }
     }// #footer      
