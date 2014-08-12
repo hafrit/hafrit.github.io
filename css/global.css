@@ -161,6 +161,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #666;
+  background-size: cover;
   -moz-background-size: 100% 100%;
   /* Gecko 1.9.2 (Firefox 3.6) */
   -o-background-size: 100% 100%;
