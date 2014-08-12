@@ -76,7 +76,7 @@
     padding-bottom: 20px; }
 
   .container {
-    max-width: 100%; }
+    width: 100%; }
     .container .line {
       font-size: 0.5em; }
 
@@ -84,7 +84,7 @@
     width: 100%; }
 
   .jumbotron {
-    max-width: 96%; }
+    width: 96%; }
     .jumbotron h1 {
       font-size: 1.4em; }
 
@@ -132,7 +132,7 @@
     display: block; }
   #footer ul.copyright {
     margin: 0 auto;
-    max-width: none;
+    width: none;
     text-align: inherit; }
 
   .touch {
