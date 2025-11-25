@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="CV interactif de Hamdi AFRIT, Tech Lead Symfony avec 14 ans d'expérience en architecture, développement backend et optimisation." />
+    <meta name="author" content="Hamdi AFRIT" />
+    <meta name="keywords" content="Hamdi AFRIT, Tech Lead, Symfony, PHP, Développeur, CV, Portfolio" />
+    <meta property="og:title" content="Terminal CV — Hamdi AFRIT" />
+    <meta property="og:description" content="CV interactif de Hamdi AFRIT, Tech Lead Symfony" />
+    <meta property="og:type" content="website" />
+    <title>Terminal CV — Hamdi AFRIT</title>
+    <link rel="stylesheet" href="css/terminal-ui.css" />
+</head>
+
+<body>
+    <div class="bg-wrap" aria-hidden="true"></div>
+
+    <div id="boot-screen">
+        <pre id="boot-text" class="boot-text" aria-live="polite"></pre>
+    </div>
+
+    <main class="stage">
+        <section id="terminal" class="terminal hidden" role="application" aria-label="Terminal CV">
+            <header class="term-header">
+                <div class="traffic">
+                    <span class="t red" aria-hidden="true"></span>
+                    <span class="t yellow" aria-hidden="true"></span>
+                    <span class="t green" aria-hidden="true"></span>
+                </div>
+                <div class="term-title">~/portfolio — Hamdi AFRIT</div>
+            </header>
+
+            <div id="output" class="term-body" aria-live="polite"></div>
+
+            <div class="term-input-area">
+                <label for="command-input" class="prompt">hamdi@ubuntu:~$</label>
+                <input id="command-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+                    aria-label="Saisie de commande terminal" placeholder="Tapez 'help' pour commencer" />
+            </div>
+
+            <div class="term-footer">TAB = autocomplétion • ↑/↓ = historique • 'resume' = lecture complète</div>
+        </section>
+    </main>
+
+    <script type="module" src="js/boot-sequence.js"></script>
+</body>
+
+</html>

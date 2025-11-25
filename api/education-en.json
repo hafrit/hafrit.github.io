@@ -1,0 +1,38 @@
+[
+    {
+        "debut": "2009-09",
+        "fin": "2012-06",
+        "titre": "Master's Degree in Computer Science Management",
+        "ecole": "ESSEC Tunisia"
+    },
+    {
+        "debut": "2010-05",
+        "fin": "2010-06",
+        "titre": "MCPD Framework 2.0 (ASP.NET/C#)",
+        "ecole": "Microsoft Tunisia"
+    },
+    {
+        "debut": "2014-04",
+        "fin": "2014-04",
+        "titre": "MongoDB M101P",
+        "ecole": "MongoDB University"
+    },
+    {
+        "debut": "2020-05",
+        "fin": "2020-05",
+        "titre": "Angular",
+        "ecole": "Udemy"
+    },
+    {
+        "debut": "2020-05",
+        "fin": "2020-05",
+        "titre": "AWS Certified Developer Associate",
+        "ecole": "Udemy"
+    },
+    {
+        "debut": "2023-08",
+        "fin": "2023-09",
+        "titre": "Symfony 6 — Certification Preparation",
+        "ecole": "SensioLabs University"
+    }
+]

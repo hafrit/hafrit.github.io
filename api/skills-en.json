@@ -1,0 +1,75 @@
+{
+    "Web Development": [
+        "PHP 5/7/8",
+        "Restful",
+        "JSON",
+        "SOAP",
+        "XML/XSD",
+        "Twig",
+        "Doctrine",
+        "GIT",
+        "SVN",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Bootstrap 3",
+        "Smarty",
+        "Stimulus",
+        "Javascript",
+        "jQuery",
+        "Ajax",
+        "Mootools",
+        "CRON",
+        "BASH",
+        "Java",
+        "JEE",
+        "C",
+        "UML",
+        "Visual Basic .Net",
+        "JSP",
+        "ASP .Net"
+    ],
+    "Frameworks & Libraries": [
+        "Symfony 2.X - 7.X",
+        "Angular",
+        "React",
+        "Magento",
+        "JeazyUI Framework",
+        "jQuery VectorMaps",
+        "Highcharts",
+        "DataTable",
+        "Zend Gdata Framework",
+        "GoogleDrive API",
+        "Jit Toolkit"
+    ],
+    "CMS": [
+        "SULU",
+        "Joomla",
+        "Drupal V6/7",
+        "Magnolia (JEE)"
+    ],
+    "DBMS": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Microsoft Access",
+        "Oracle",
+        "SQL Server"
+    ],
+    "Design Methods": [
+        "UML",
+        "MERISE"
+    ],
+    "Project Management": [
+        "Agile SCRUM",
+        "Kanban"
+    ],
+    "Virtualization": [
+        "Docker",
+        "Vagrant"
+    ],
+    "HTTP Servers": [
+        "Apache",
+        "NGINX"
+    ]
+}

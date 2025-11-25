@@ -1,0 +1,23 @@
+{
+    "nom": "Hamdi AFRIT",
+    "poste": "Tech Lead Symfony",
+    "localisation": "Meudon-La-Forêt, France",
+    "email": "hamdi.afrit@gmail.com",
+    "telephone": "+33 7 85 03 57 59",
+    "linkedin": "https://www.linkedin.com/in/hamdiafrit",
+    "description": [
+        "Analyse du besoin",
+        "Conception et conseil sur la solution",
+        "Développement avec Symfony 2.X .. 7.X : conception et modélisation technique",
+        "Développement, intégration et déploiement",
+        "Optimisation des performances",
+        "Méthodologie de développement DDD et TDD",
+        "Rédaction de spécifications techniques et fonctionnelles",
+        "Déploiement",
+        "Spécifications techniques et diagrammes UML de conception",
+        "Développement Javascript",
+        "Tests unitaires et fonctionnels",
+        "Intégration HTML5/CSS3 responsive design",
+        "Analyse et conception d’outils de CMS (Sulu, Joomla, Drupal)"
+    ]
+}

@@ -1,0 +1,317 @@
+:root {
+    --ubuntu-orange: #e95420;
+    --ubuntu-purple: #77216f;
+    --ubuntu-aubergine: #2c001e;
+    --ubuntu-light-bg: #3d0f3d;
+
+    --text-main: #eaeaea;
+    --text-muted: #b7b7b7;
+
+    --green: #00ff9c;
+    --cyan: #5cd5ff;
+    --yellow: #ffe47a;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+
+    --transition-fast: 320ms;
+    --transition-medium: 450ms;
+    --transition-slow: 500ms;
+
+    --shadow-sm: 0 0 6px rgba(0, 255, 150, 0.18);
+    --shadow-md: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    --font-mono: "Ubuntu Mono", monospace;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(145deg, var(--ubuntu-aubergine), var(--ubuntu-purple));
+    font-family: var(--font-mono);
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+.bg-wrap {
+    position: fixed;
+    inset: 0;
+    background-image: url('/mnt/data/f347d2ac-e38d-47aa-b7a9-41813a1ef85a.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.14;
+    filter: blur(3px) saturate(0.8);
+    z-index: 0;
+}
+
+#boot-screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.boot-text {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    color: var(--text-main);
+    white-space: pre;
+    text-align: left;
+    width: min(920px, 86%);
+    line-height: 1.45;
+    opacity: 0.95;
+    text-shadow: var(--shadow-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.stage {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    z-index: 2;
+}
+
+.terminal {
+    width: min(1100px, 94%);
+    background: #111;
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-fast) ease;
+}
+
+.term-header {
+    display: flex;
+    align-items: center;
+    padding: 10px var(--spacing-sm);
+    background: #2e2a2e;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.traffic {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+}
+
+.t {
+    width: var(--spacing-md);
+    height: var(--spacing-md);
+    border-radius: 50%;
+}
+
+.t.red {
+    background: #ff6059;
+}
+
+.t.yellow {
+    background: #ffbd2e;
+}
+
+.t.green {
+    background: #27c93f;
+}
+
+.term-title {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.term-body {
+    padding: var(--spacing-xl);
+    min-height: 420px;
+    max-height: 65vh;
+    overflow-y: auto;
+    white-space: normal;
+    line-height: 1.5;
+    font-size: var(--font-size-md);
+    color: var(--text-main);
+}
+
+.block {
+    margin-bottom: var(--spacing-sm);
+    padding: 10px var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+}
+
+.block-html {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--ubuntu-orange);
+}
+
+.section-title {
+    font-weight: bold;
+    color: var(--ubuntu-orange);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+.profile-line {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-md);
+}
+
+.profile-description-line {
+    margin-bottom: var(--spacing-xs);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.cyan-text {
+    color: var(--cyan);
+}
+
+.yellow-text {
+    color: var(--yellow);
+}
+
+a {
+    color: var(--cyan);
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--ubuntu-orange);
+}
+
+.term-input-area {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: #1b1b1b;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.prompt {
+    color: var(--ubuntu-orange);
+    font-weight: bold;
+    cursor: default;
+}
+
+#command-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: var(--font-size-md);
+    color: var(--text-main);
+    padding: var(--spacing-sm);
+}
+
+#command-input::placeholder {
+    color: var(--text-muted);
+    opacity: 0.6;
+}
+
+.term-footer {
+    padding: var(--spacing-sm) var(--spacing-sm);
+    background: #181818;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+.cursor {
+    width: var(--spacing-sm);
+    height: 18px;
+    background: var(--green);
+    border-radius: 2px;
+    animation: blink 1s infinite steps(1);
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.boot-dimmed .boot-text {
+    opacity: 0.18;
+    filter: blur(2px) brightness(0.8);
+    transition: all 600ms ease;
+}
+
+@media (max-width: 768px) {
+    .terminal {
+        width: 96%;
+        max-height: 90vh;
+    }
+
+    .term-body {
+        padding: var(--spacing-md);
+        max-height: 60vh;
+        font-size: var(--font-size-sm);
+    }
+
+    .term-input-area {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .boot-text {
+        font-size: 11px;
+        width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal {
+        width: 98%;
+    }
+
+    .term-body {
+        padding: var(--spacing-sm);
+        font-size: var(--font-size-xs);
+    }
+
+    .term-footer {
+        font-size: 10px;
+    }
+}
