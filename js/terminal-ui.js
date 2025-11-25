@@ -112,33 +112,15 @@ class TypingEngine {
     async typeToBlock({ text = "", finalHTML = null, speed = CONFIG.TYPING_SPEED } = {}) {
         const block = this.dom.createBlock(finalHTML ? "html" : "text");
 
-        for (let i = 0; i < text.length; i++) {
-            block.textContent += text[i];
-            this.dom.scrollToBottom();
-
-            const delay = this._calculateDelay(text[i], speed);
-            await Utils.wait(delay);
-        }
-
-        await Utils.wait(CONFIG.TYPING_DELAY_END);
-
         if (finalHTML) {
             block.innerHTML = finalHTML;
             block.className = "block block-html";
-            this.dom.scrollToBottom();
+        } else {
+            block.textContent = text;
         }
 
+        this.dom.scrollToBottom();
         return block;
-    }
-
-    _calculateDelay(char, baseSpeed) {
-        if (char === "." || char === "," || char === "!") {
-            return baseSpeed + CONFIG.TYPING_DELAY_PUNCTUATION;
-        }
-        if (char === "\n") {
-            return baseSpeed + CONFIG.TYPING_DELAY_NEWLINE;
-        }
-        return baseSpeed;
     }
 
     renderJSON(obj) {
@@ -471,7 +453,6 @@ class CommandHandler {
             if (index >= total) break;
 
             await this._showSingleExperience(index + 1);
-            await Utils.wait(CONFIG.WAIT_BETWEEN_ITEMS);
         }
 
         const endIndex = Math.min(startIndex + safeLimit, total);
@@ -517,18 +498,12 @@ class CommandHandler {
             speed: 10
         });
 
-        await Utils.wait(CONFIG.WAIT_BETWEEN_SECTIONS);
         await this._cmdSkills();
-
-        await Utils.wait(CONFIG.WAIT_BETWEEN_SECTIONS);
         await this._cmdEducation();
-
-        await Utils.wait(CONFIG.WAIT_BETWEEN_SECTIONS);
 
         for (const exp of experiences) {
             const plain = `${exp.debut} → ${exp.fin} — ${exp.role} @ ${exp.company}\n${(exp.missions || exp.tasks || []).join("\n")}\n`;
             await this.typing.typeToBlock({ text: plain, finalHTML: null, speed: 9 });
-            await Utils.wait(CONFIG.WAIT_BETWEEN_SECTIONS);
         }
     }
 
