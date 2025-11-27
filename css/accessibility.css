@@ -1,0 +1,261 @@
+/* ============================================
+   ACCESSIBILITY UTILITIES - WCAG 2.1 AA
+   ============================================ */
+
+/* Screen Reader Only Content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--ubuntu-orange);
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10000;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --text-main: #ffffff;
+        --text-muted: #cccccc;
+        --cyan-text: #00ffff;
+        --green-text: #00ff00;
+        --yellow-text: #ffff00;
+        --ubuntu-orange: #ff8800;
+    }
+
+    .terminal {
+        border: 3px solid var(--ubuntu-orange);
+    }
+
+    #command-input:focus {
+        outline: 4px solid var(--ubuntu-orange);
+        outline-offset: 2px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Font Size Controls */
+.font-size-controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 9999;
+    background: rgba(13, 2, 8, 0.9);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--ubuntu-orange);
+}
+
+.font-size-btn {
+    background: var(--ubuntu-orange);
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.font-size-btn:hover {
+    transform: scale(1.1);
+}
+
+.font-size-btn:focus {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+}
+
+.font-size-btn:active {
+    transform: scale(0.95);
+}
+
+/* Accessible Focus Styles */
+*:focus {
+    outline: 3px solid var(--ubuntu-orange);
+    outline-offset: 2px;
+}
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid var(--ubuntu-orange);
+    outline-offset: 2px;
+}
+
+/* Enhanced Keyboard Navigation */
+.keyboard-user *:focus {
+    outline: 3px solid var(--ubuntu-orange);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px rgba(255, 136, 0, 0.2);
+}
+
+/* Text Scaling Support */
+html {
+    font-size: 100%;
+    /* Base 16px */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+/* Large Text Mode */
+.large-text {
+    font-size: 1.25rem !important;
+}
+
+.large-text .term-body {
+    font-size: 1.125rem !important;
+    line-height: 1.6 !important;
+}
+
+.large-text #command-input {
+    font-size: 1.125rem !important;
+}
+
+/* Extra Large Text Mode */
+.extra-large-text {
+    font-size: 1.5rem !important;
+}
+
+.extra-large-text .term-body {
+    font-size: 1.375rem !important;
+    line-height: 1.7 !important;
+}
+
+.extra-large-text #command-input {
+    font-size: 1.375rem !important;
+}
+
+/* High Contrast Mode Toggle */
+.high-contrast {
+    --bg-primary: #000000;
+    --text-main: #ffffff;
+    --text-muted: #ffffff;
+    --cyan-text: #00ffff;
+    --green-text: #00ff00;
+    --yellow-text: #ffff00;
+    --ubuntu-orange: #ff8800;
+}
+
+.high-contrast .terminal {
+    background: #000000;
+    border: 3px solid #ffffff;
+}
+
+.high-contrast .term-header {
+    background: #000000;
+    border-bottom: 3px solid #ffffff;
+}
+
+.high-contrast .term-footer {
+    background: #000000;
+    border-top: 3px solid #ffffff;
+}
+
+/* ARIA Live Region Styling */
+[aria-live="polite"],
+[aria-live="assertive"] {
+    position: relative;
+}
+
+/* Loading State */
+.loading::after {
+    content: "Loading...";
+    position: absolute;
+    left: -9999px;
+}
+
+/* Error State */
+.error[role="alert"] {
+    color: var(--ubuntu-orange);
+    font-weight: bold;
+}
+
+/* Success State */
+.success[role="status"] {
+    color: var(--green-text);
+}
+
+/* Tooltip for Accessibility */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    z-index: 1000;
+}
+
+/* Print Styles for Accessibility */
+@media print {
+
+    .skip-link,
+    .font-size-controls {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}

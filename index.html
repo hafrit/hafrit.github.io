@@ -296,17 +296,29 @@
     </script>
 
     <link rel="stylesheet" href="css/terminal-ui.css" />
+    <link rel="stylesheet" href="css/accessibility.css" />
 </head>
 
 <body>
-    <div id="boot-screen">
-        <pre id="boot-text" class="boot-text" aria-live="polite"></pre>
-    </div>
+    <!-- Accessibility Controls -->
+    <fieldset class="font-size-controls" role="group" aria-label="Contrôles d'accessibilité">
+        <button class="font-size-btn" id="decrease-font" aria-label="Diminuer la taille du texte"
+            title="Diminuer la taille du texte">A-</button>
+        <button class="font-size-btn" id="increase-font" aria-label="Augmenter la taille du texte"
+            title="Augmenter la taille du texte">A+</button>
+        <button class="font-size-btn" id="toggle-contrast" aria-label="Activer le mode contraste élevé"
+            title="Mode contraste élevé">◐</button>
+    </fieldset>
 
-    <main class="stage">
-        <section id="terminal" class="terminal hidden" role="application" aria-label="Terminal CV">
-            <header class="term-header">
-                <div class="traffic">
+    <output id="boot-screen" aria-live="polite" aria-label="Écran de démarrage">
+        <pre id="boot-text" class="boot-text"></pre>
+    </output>
+
+    <main class="stage" id="main-content">
+        <section id="terminal" class="terminal hidden" role="application"
+            aria-label="Terminal CV interactif de Hamdi AFRIT">
+            <header class="term-header" role="banner">
+                <div class="traffic" aria-hidden="true">
                     <span class="t red" aria-hidden="true"></span>
                     <span class="t yellow" aria-hidden="true"></span>
                     <span class="t green" aria-hidden="true"></span>
@@ -314,19 +326,28 @@
                 <div class="term-title">~/portfolio — Hamdi AFRIT</div>
             </header>
 
-            <div id="output" class="term-body" aria-live="polite"></div>
+            <div id="output" class="term-body" role="log" aria-live="polite" aria-atomic="false"
+                aria-relevant="additions"></div>
 
-            <div class="term-input-area">
-                <label for="command-input" class="prompt">hamdi@ubuntu:~$</label>
+            <form class="term-input-area">
+                <label for="command-input" class="prompt" id="prompt-label">hamdi@ubuntu:~$</label>
                 <input id="command-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
-                    aria-label="Saisie de commande terminal" placeholder="Tapez 'help' pour commencer" />
-            </div>
+                    aria-label="Saisie de commande terminal - Tapez 'help' pour voir les commandes disponibles"
+                    aria-describedby="terminal-instructions" placeholder="Tapez 'help' pour commencer" />
+                <span id="terminal-instructions" class="sr-only">
+                    Utilisez les commandes help, profile, skills, education, experiences, resume, contact, cv, ou clear.
+                    Naviguez dans l'historique avec les flèches haut et bas.
+                    Utilisez Tab pour l'autocomplétion.
+                </span>
+            </form>
 
-            <div class="term-footer">TAB = autocomplétion • ↑/↓ = historique • 'resume' = lecture complète</div>
+            <footer class="term-footer" role="contentinfo" aria-label="Aide navigation terminal">TAB = autocomplétion •
+                ↑/↓ = historique • 'resume' = lecture complète</footer>
         </section>
     </main>
 
     <script type="module" src="js/boot-sequence.js"></script>
+    <script type="module" src="js/accessibility.js"></script>
 </body>
 
 </html>

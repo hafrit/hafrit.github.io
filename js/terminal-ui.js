@@ -579,6 +579,14 @@ class Terminal {
     }
 
     _setupEventListeners() {
+        // Prevent form submission from refreshing the page
+        const form = this.dom.input.closest('form');
+        if (form) {
+            form.addEventListener("submit", (event) => {
+                event.preventDefault();
+            });
+        }
+
         this.dom.input.addEventListener("keydown", async (event) => {
             await this._handleKeyPress(event);
         });
