@@ -51,17 +51,6 @@ body {
     overflow: hidden;
 }
 
-.bg-wrap {
-    position: fixed;
-    inset: 0;
-    background-image: url('/mnt/data/f347d2ac-e38d-47aa-b7a9-41813a1ef85a.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.14;
-    filter: blur(3px) saturate(0.8);
-    z-index: 0;
-}
-
 #boot-screen {
     position: fixed;
     inset: 0;
