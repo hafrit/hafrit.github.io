@@ -1,4 +1,16 @@
 # robotstxt.org/
 
 User-agent: *
-Allow:
+Allow: /
+
+# Sitemap
+Sitemap: https://hafrit.github.io/sitemap.xml
+
+# Fichiers à ne pas indexer
+Disallow: /js/
+Disallow: /css/
+Disallow: /api/
+Disallow: /data/
+
+# Autoriser le CV
+Allow: /file/Hamdi_AFRIT___CV.pdf
